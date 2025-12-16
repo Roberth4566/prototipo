@@ -260,15 +260,15 @@ ul {
 }
 
 .eventos-container {
-    margin-top: 0.3rem;
+    margin-top: 0.1rem; /* más pequeño */
     width: 100%;
 }
 
 .evento {
-    background-color: #f5f5f5;
-    color: #000; /* Mantener negro */
-    padding: 0.2rem 0.3rem;
-    border-radius: 3px;
+    background-color: transparent; /* Elimina fondo gris */
+    color: #000; /* texto negro */
+    padding: 0; /* sin padding extra */
+    border-radius: 0; /* sin esquinas redondeadas */
     font-size: 0.75rem;
     display: block;
     text-align: center;
@@ -300,7 +300,8 @@ ul {
    FOOTER
 ========================================= */
 .footer {
-    background-color: #f5f5f5;
+    background-color: transparent; /* elimina fondo gris */
+    color: #000; /* mantiene texto negro */
     padding: 1rem 2rem;
     text-align: center;
     margin-top: auto; /* Siempre al final */
@@ -339,7 +340,7 @@ body.dark-mode .evento {
 }
 
 body.dark-mode .footer {
-    background-color: #1e1e1e;
+    background-color: transparent; /* footer modo oscuro sin color */
 }
 
 /* =========================================
@@ -364,3 +365,4 @@ body, .nav-link, .curso-item, .tarea-item, .evento, #toggle-dark, .input, .btn {
         margin: 1rem;
     }
 }
+
